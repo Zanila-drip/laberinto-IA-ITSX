@@ -36,4 +36,13 @@ void main()
   print(matrix);
  */
 
+  while(contadorCero <= contadorLlenado)
+  {
+    matrix.add([]);
+    for (int i=0; i<=contadorLlenado;i++)
+    {
+      matrix[contadorCero].add(valorMatriz);
+    }
+    contadorCero++;
+  }
 }
