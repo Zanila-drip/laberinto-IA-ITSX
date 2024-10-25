@@ -64,9 +64,6 @@ void main()
     }
 
   }
-  regresarNumero(excel, matrix);
-  for (int i=0;i<=filas-1;i++)
-  {
-    print(matrix[i]);
-  }
+
+
 }
