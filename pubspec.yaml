@@ -1,0 +1,9 @@
+name: Laberinto  # Reemplaza con el nombre de tu proyecto
+description: Un laberinto simple con matrices
+version: 1.0.0
+
+environment:
+  sdk: '^3.5.0'
+
+dependencies:
+  excel: ^4.0.6
