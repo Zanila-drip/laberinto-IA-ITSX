@@ -33,40 +33,25 @@ void main()
     {
       for (var row in excel.tables[table]!.rows)
       {
+        var contador = 0;
+        int contadorLlenado = 0;
         for (var cell in row)
         {
           int contadorMatriz = excel.tables[table]?.maxRows;
-          int contadorLlenado = contadorMatriz;
-          int contadorCero = 0;
-          int contadorFuncion = 0;
-
-
           final value = cell?.value;
           var valor = value.toString();
-
-
-          //valorMatriz == El dato dentro de la celda
-          void matrizAdd(int valorMatriz,int contadorFuncion)
-          {
-            matrix[contadorFuncion].add(valorMatriz);
-            print(contadorFuncion);
-          }
           int valorInt = int.parse(valor);
-          while(contadorFuncion <= contadorLlenado)
-            {
-              matrizAdd(valorInt, contadorFuncion);
-            }
-          if (contadorFuncion <= contadorLlenado)
+          matrix[contadorLlenado].add(valorInt);
+          print("Contador llenado $contadorLlenado");
+          print("Contador simple $contador");
+          if (contador==contadorMatriz)
           {
-            matrizAdd(valorInt,contadorFuncion);
-            contadorFuncion = 0;
+            contadorLlenado+=1;
           }
           else
-          {
-            contadorFuncion++;
-          }
-
-
+            {
+              contador+=1;
+            }
         }
       }
 
