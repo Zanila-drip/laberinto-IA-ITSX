@@ -48,7 +48,7 @@ class TipoMovimiento extends Matriz
   set setColumna(int columna) => _columna = columna;
 
   get getFila => _fila;
-  set setFila (int fila) `=> _fila = fila;
+  set setFila (int fila) => _fila = fila;
 
   get getMatrix => _matrix;
   set setMatrix(List<List<int>> matrix)=> _matrix = matrix;

@@ -1,10 +1,18 @@
-int? regresarNumeroFilas(excel)
+int? regresarNumeroFilas2(excel)
+{
+  for (var table in excel.tables.keys)
+  {
+
+    int? fila = excel.tables[table]?.maxRows;
+    return fila;
+  };
+}
+int? regresarNumeroColumnas2(excel)
 {
   for (var table in excel.tables.keys)
   {
     int? columna = excel.tables[table]?.maxColumns;
-    int? fila = excel.tables[table]?.maxRows;
-    return fila;
+    return columna;
   };
 }
 void llenarMatriz(excel,matrix)

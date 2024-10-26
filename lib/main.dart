@@ -7,14 +7,14 @@ import 'package:Laberinto/PasoCuatroCriterioesDeMovimiento.dart';
 
 void main()
 {
-  var file = 'archivosExcel/pruebaTres.xlsx ';
+  var file = 'archivosExcel/pruebaUno9x9.xlsx ';
   var bytes = File(file).readAsBytesSync();
   var excel = Excel.decodeBytes(bytes);
 
   bool? proceder = regresarNumeroColumnas(excel);
   if(proceder != false)
   {
-    int? filas = regresarNumeroFilas(excel);
+    int? filas = regresarNumeroFilas2(excel);
     int? columnas = filas;
     List<List<int>> matrix = List.generate(filas!, (i) => List.filled(columnas!, 0),);
     llenarMatriz(excel, matrix);
