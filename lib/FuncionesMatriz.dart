@@ -31,10 +31,3 @@ void llenarMatriz(excel,matrix)
   }
 
 }
-void imprimirMatrix(matrix,filas)
-{
-  for (int i=0;i<=filas-1;i++)
-  {
-    print(matrix[i]);
-  }
-}

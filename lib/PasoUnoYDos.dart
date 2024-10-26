@@ -6,7 +6,7 @@ import 'package:Laberinto/ComprobarSonIguales.dart';
 
 void esqueleto()
 {
-  var file = 'archivosExcel/pruebaDos.xlsx ';
+  var file = 'archivosExcel/pruebaUno.xlsx ';
   var bytes = File(file).readAsBytesSync();
   var excel = Excel.decodeBytes(bytes);
 
@@ -17,7 +17,7 @@ void esqueleto()
     int? columnas = filas;
     List<List<int>> matrix = List.generate(filas!, (i) => List.filled(columnas!, 0),);
     llenarMatriz(excel, matrix);
-    imprimirMatrix(matrix, filas);
+    //imprimirMatrix(matrix, filas);
   }
   else
   {

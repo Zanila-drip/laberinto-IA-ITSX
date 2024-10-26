@@ -4,7 +4,7 @@ bool? regresarNumeroColumnas(excel)
   {
     int? columna = excel.tables[table]?.maxColumns;
     int? fila = excel.tables[table]?.maxRows;
-    if (columna==fila)
+    if (columna!=fila)
     {
       return true;
     }
